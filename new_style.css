@@ -1,0 +1,93 @@
+:root{
+    --base-color: '';
+    --secondary-color: '';
+    --accent-color: '';
+    --text-color: '';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.4em;
+    margin-left: .2em;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    /* justify-content: space-between; */
+}
+nav{
+    margin-right: 2em;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* float: right; */
+}
+
+nav li{
+    /* display: inline; */
+    /* justify-content: space-between; */
+    float: right;
+}
+
+li a{
+    display: block;
+    padding: .1em 2em 0 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.banner{
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+.intro{
+    color: red;
+    font-size: 2em;
+    padding: 4em 2em 2em 2em;
+}
+
+#work{
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: whitesmoke;
+    /* display: flex; */
+    height: 100%;
+    max-height: 500px;
+    /* min-width: 50; */
+    margin-top: 10em;
+    border-radius: .2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+    object-fit: cover;
+    max-width: 200px;
+    padding: 1em;
+}
