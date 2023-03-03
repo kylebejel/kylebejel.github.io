@@ -263,6 +263,15 @@ ul li a:hover{
     height: 100vh;
 }
 
+#contact h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#contact .accent{
+    text-decoration: none;
+}
+
 .work-container{
     display: grid;
     grid-template-rows: 33% 33% 33%;
