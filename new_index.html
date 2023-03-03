@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <a href="new_index.html" class="logo">Kyle Bejel</a>
+        <a href="new_index.html" class="logo"><span class="accent">&lt;</span>Kyle<span class="accent"> /&gt;</span></a>
         <nav>
             <ul class="menu">
                 <li>
@@ -35,17 +36,51 @@
     <div class="container">
         <section id="landing">
             <div id="landing-content">
-                <h2>Hi there,</h2>
+                <h2>Hi there <span class="wave">👋</span>,</h2>
                 <h1 id="intro" class="intro">my name is <span class="accent">Kyle Bejel</span> and I am a <span class="accent">Software Developer</span></h1>
-                <p>In a rush? Here is my <a href="/KyleBejel_Resume.pdf">Resume</a>.</p>
+                <p>In a rush? Here is my <a class="resume" href="/KyleBejel_Resume.pdf">Resume</a>.</p>
+                <div class="socials">
+                    <a class="fa fa-github fa-2x"href="https://github.com/kylebejel" target="_blank"></a>
+                    <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/kylebejel/" target="_blank"></a>
+                </div>
             </div>
             <div class="landing-img">
                 <img src="img/pciso.png" alt="">
             </div>
         </section>
         <section id="work">
-            <h2>Here is some of my work!</h2>
-            <div class="work-container">
+            <h2>Here is some of my work<span class="accent">!</span></h2>
+            <div class="project">
+                <h1>Movie Info App</h1>
+                <img src="img/movie-app-img.png" alt="THUMBNAIL HERE">
+                <div class="skills">
+                    <ul>
+                        <li class="skill-badge js">JS</li>
+                        <li class="skill-badge ht">HTML</li>
+                        <li class="skill-badge cs">CSS</li>
+                    </ul>
+                </div>
+                <p>App for fetching various data on queried movie</p>
+                <div class="links">
+                    <a href="" title="code" class="code">&lt;/&gt;</a>
+                    <a href="" title="live preview" class="live">Live Preview</a>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Movie Info App</h1>
+                <img src="img/movie-app-img.png" alt="THUMBNAIL HERE">
+                <div class="skills">
+                    <ul>
+                        <li class="skill-badge js">JS</li>
+                        <li class="skill-badge ht">HTML</li>
+                        <li class="skill-badge cs">CSS</li>
+                    </ul>
+                </div>
+                <p>this is a work description</p>
+                <a href="" title="code" class="code">&lt;/&gt;</a>
+                <a href="" title="live preview" class="live">Live Preview</a>
+            </div>
+            <!-- <div class="work-container">
                 <div class="item item-1">
                     <div class="card">
                         <h1>Title</h1>
@@ -100,7 +135,7 @@
                         <a href="" target="_blank" class="live">Live Preview</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="about-me">
             <h2>About Me</h2>

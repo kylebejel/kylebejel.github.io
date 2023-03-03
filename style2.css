@@ -18,6 +18,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
 }
 
 .container{
@@ -25,6 +26,7 @@ body{
     color: var(--text-color);
     /* margin-top: 5em; */
     padding: 0 10%;
+    overflow: auto;
 }
 
 header{
@@ -52,10 +54,15 @@ header{
 
 .logo{
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--text-color);
     margin-right: auto;
     font-size: 2em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+}
+
+.logo span{
+    text-decoration: none;
 }
 
 ul{
@@ -144,9 +151,11 @@ ul li a:hover{
 #landing p{
     padding-top: 3em;
 }
-#landing a{
+
+.resume{
     color: var(--accent-color);
 }
+
 .landing-content{
     max-width: 600px;
     min-width: 300px;
@@ -161,6 +170,8 @@ ul li a:hover{
 #work{
     padding-top: 5em;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* background-color: #5A5A5A; */
 }
 
@@ -168,6 +179,69 @@ ul li a:hover{
     font-size: 2em;
     padding: 1em 0;
     font-weight: 400;
+}
+
+#work .accent{
+    text-decoration: none;
+}
+
+.project{
+    box-shadow: 0 4px 8px rgba(182, 182, 182, 0.75);
+    padding: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.project img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 1em;
+}
+
+.project a{
+    border-radius: .6em;
+    padding: .5em;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.project a:hover{
+    opacity: .5;
+}
+
+.project h1{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.project p{
+    padding: 1em 0;
+}
+
+.skill-badge{
+    border: 2px solid var(--text-color);
+    border-radius: 1em;
+    font-weight: 500;
+}
+
+.js{
+    border-color: blue;
+    color: blue;
+}
+
+.ht{
+    border-color: orange;
+    color: orange;
+}
+
+.cs{
+    border-color: steelblue;
+    color: steelblue;
 }
 
 #about-me{
@@ -203,6 +277,19 @@ ul li a:hover{
     transition: .4s ease;
 }
 
+
+.fa{
+    color: var(--text-color);
+    transition: .4s ease;
+    text-decoration: none;
+    padding: .2em .2em;
+}
+
+
+.fa:hover{
+    color: var(--accent-color)
+}
+
 .card a:hover{
     opacity: .5;
 }
@@ -226,6 +313,26 @@ ul li a:hover{
     font-size: 3em;
     font-weight: 400;
 }
+
+.wave {
+    font-size: 1em;;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
 
 .menu {
     display: none;
