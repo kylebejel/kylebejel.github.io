@@ -5,50 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Bejel</title>
-    <link rel="stylesheet" href="new_style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="new_index.html" class="logo">Kyle Bejel</a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="banner">
-            <h1 id="intro" class="intro">Hi my name is Kyle Bejel and I am a Software Developer</h1>
+    <header>
+        <a href="new_index.html" class="logo">Kyle Bejel</a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
+    <div class="container">
+        <section id="landing">
+            <div id="landing-content">
+                <h2>Hi there,</h2>
+                <h1 id="intro" class="intro">my name is <span class="accent">Kyle Bejel</span> and I am a <span class="accent">Software Developer</span></h1>
+                <p>In a rush? Here is my <a href="/KyleBejel_Resume.pdf">Resume</a>.</p>
+            </div>
+            <div class="landing-img">
+                <img src="img/pciso.png" alt="">
+            </div>
+        </section>
         <section id="work">
-            <div class="card">
-                <img src="" alt="THUMBNAIL HERE">
-                <p>this is a work description</p>
-                <a href="" class="code">&lt;/&gt;</a>
-                <a href="" class="live">Live Preview</a>
-            </div>
-            <div class="card">
-                <img src="img/t+t.png" alt="THUMBNAIL HERE">
-                <p>this is a work description</p>
-                <a href="" class="code">&lt;/&gt;</a>
-                <a href="" class="live">Live Preview</a>
-            </div>
-            <div class="card">
-                <img src="" alt="THUMBNAIL HERE">
-                <p>this is a work description</p>
-                <a href="" class="code">&lt;/&gt;</a>
-                <a href="" class="live">Live Preview</a>
+            <h2>Here is some of my work!</h2>
+            <div class="work-container">
+                <div class="item item-1">
+                    <div class="card">
+                        <h1>Title</h1>
+                        <img src="" alt="THUMBNAIL HERE">
+                        <p>this is a work description</p>
+                        <a href="" class="code">&lt;/&gt;</a>
+                        <a href="" class="live">Live Preview</a>
+                    </div>
+                </div>
+                <div class="item item-2">
+                    <div class="card">
+                        <h1>Title</h1>
+                        <img src="" alt="THUMBNAIL HERE">
+                        <p>this is a work description</p>
+                        <a href="" class="code">&lt;/&gt;</a>
+                        <a href="" class="live">Live Preview</a>
+                    </div>
+                </div>
+                <div class="item item-3">
+                    <div class="card">
+                        <h1>Movie Info App</h1>
+                        <img src="/img/movie-app-img.png" alt="THUMBNAIL HERE">
+                        <p>Fetches data about queried movie and presents it to user</p>
+                        <a href="https://github.com/kylebejel/Movie-Info-App" target="_blank" class="code">&lt;/&gt;</a>
+                        <a href="" target="_blank" class="live">Live Preview</a>
+                    </div>
+                </div>
+                <div class="item item-4">
+                    <div class="card">
+                        <h1>Coin Flipper</h1>
+                        <img src="/img/coin-flip-img.png" alt="THUMBNAIL HERE">
+                        <p>flips a coin and keeps track of the outcome</p>
+                        <a href="https://github.com/kylebejel/coin-flip" target="_blank" class="code">&lt;/&gt;</a>
+                        <a href="" target="_blank" class="live">Live Preview</a>
+                    </div>
+                </div>
+                <div class="item item-5">
+                    <div class="card">
+                        <h1>Movie Info App</h1>
+                        <img src="/img/movie-app-img.png" alt="THUMBNAIL HERE">
+                        <p>App that fetches data about queried movie</p>
+                        <a href="https://github.com/kylebejel/Movie-Info-App" target="_blank" class="code">&lt;/&gt;</a>
+                        <a href="" target="_blank" class="live">Live Preview</a>
+                    </div>
+                </div>
+                <div class="item item-6">
+                    <div class="card">
+                        <h1>Movie Info App</h1>
+                        <img src="/img/movie-app-img.png" alt="THUMBNAIL HERE">
+                        <p>App that fetches data about queried movie</p>
+                        <a href="https://github.com/kylebejel/Movie-Info-App" target="_blank" class="code">&lt;/&gt;</a>
+                        <a href="" target="_blank" class="live">Live Preview</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about-me">
@@ -71,5 +122,6 @@
             <a href="">Dribbble</a>
         </footer>
     </div>
+    <script src="burger.js"></script>
 </body>
 </html>

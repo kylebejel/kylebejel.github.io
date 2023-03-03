@@ -18,11 +18,24 @@ body{
 
 header{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em 10%;
+}
+
+.container{
+    /* display: block;
+    height: 10vh;
+    background-color: aqua; */
+    /* padding-top: 100em; */
+    /* padding: 10em 10% 0 10%; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    /* margin-top: 10em; */
 }
 
 .logo {
+    margin-right: auto;
     font-size: 1.4em;
     margin-left: .2em;
     text-decoration: none;
@@ -37,23 +50,25 @@ nav{
 }
 nav ul{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* width: 100%; */
     /* float: right; */
 }
 
 nav li{
-    /* display: inline; */
-    /* justify-content: space-between; */
-    float: right;
+    display: inline-block;
+    padding: 0 1.4em;
 }
 
-li a{
-    display: block;
-    padding: .1em 2em 0 2em;
+nav li a{
+    transition: all 0.3s ease 0s;
     text-decoration: none;
     color: black;
+}
+
+nav li a:hover{
+    color: green;
 }
 
 .banner{

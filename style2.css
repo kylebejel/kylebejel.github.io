@@ -1,0 +1,244 @@
+:root{
+    --base-color:#FAF9F6;
+    /* --secondary-color: #EFEAD8; */
+    --secondary-color: #f3f0e9;
+    /* --accent-color: #6D8B74; */
+    /* --accent-color: #a6cbab; */
+    /* F99417 655DBB*/
+    --accent-color: #F99417;
+    --text-color: #5A5A5A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: var(--base-color);
+    color: var(--text-color);
+    /* margin-top: 5em; */
+    padding: 0 10%;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 10%;
+    background-color: var(--base-color);
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-height: 5em;
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+
+.accent{
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--accent-color);
+    margin-right: auto;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 1.4em;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+ul li a:hover{
+    color: var(--accent-color);
+}
+
+.burger{
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.burger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--text-color);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: .4s;
+}
+
+.burger:hover span:nth-child(2) {
+    transform: translateX(.6em);
+    background-color: var(--accent-color);
+}
+
+.burger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.burger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.burger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.burger.is-active:hover span{
+    background-color: var(--accent-color);
+}
+
+#landing{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#landing h2{
+    font-weight: 400;
+    font-size: 2em;
+}
+
+#landing p{
+    padding-top: 3em;
+}
+#landing a{
+    color: var(--accent-color);
+}
+.landing-content{
+    max-width: 600px;
+    min-width: 300px;
+}
+
+#landing img{
+    max-width: 40em;
+    position: relative;
+    display: none;
+}
+
+#work{
+    padding-top: 5em;
+    min-height: 100vh;
+    /* background-color: #5A5A5A; */
+}
+
+#work h2{
+    font-size: 2em;
+    padding: 1em 0;
+    font-weight: 400;
+}
+
+#about-me{
+    height: 100vh;
+}
+
+#contact{
+    height: 100vh;
+}
+
+.work-container{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 2em;
+}
+
+.card{
+    background-color: var(--secondary-color);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 2px 2px rgba(182, 182, 182, 0.75);
+    min-width: 500px;
+}
+
+.card p{
+    padding: 1em 0;
+}
+.card a{
+    border-radius: .9em;
+    padding: .5em;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.card a:hover{
+    opacity: .5;
+}
+
+.card img{
+    max-width: 400px;
+}
+
+.code{
+    background-color: var(--accent-color);
+    color: var(--base-color);
+}
+
+.live{
+    background-color: var(--text-color);
+    color: var(--base-color)
+}
+
+
+#intro{
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .burger{
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    #landing img{
+        display: flex;
+    }
+}
