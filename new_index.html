@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="new_index.html" class="logo"><span class="accent">&lt;</span>Kyle<span class="accent"> /&gt;</span></a>
+        <a href="#landing" class="logo"><span class="accent">&lt;</span>Kyle<span class="accent"> /&gt;</span></a>
         <nav>
             <ul class="menu">
                 <li>
@@ -31,6 +31,14 @@
             <span></span>
             <span></span>
             <span></span>
+        </div>
+        <div class="active-menu">
+            <ul>
+                <li><a href="#landing" class="active-menu-link">Home</a></li>
+                <li><a href="#work" class="active-menu-link">Work</a></li>
+                <li><a href="#contact" class="active-menu-link">Contact</a></li>
+                <li><a href="/KyleBejel_Resume.pdf" class="active-menu-link" target="_blank">Resume</a></li> 
+            </ul>
         </div>
     </header>
     <div class="container">
@@ -209,13 +217,13 @@
                     <p>don't be shy!</p>
                 <form method="POST" action="https://formspree.io/f/xknyneld">
                     <div class="input-box">
-                        <input type="text" id="name" placeholder="Enter your name">
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
-                        <input type="text" id="email" placeholder="Enter your email">
+                        <input type="text" id="email" name="email" placeholder="Enter your email">
                     </div>
                     <div class="input-box message-box">
-                        <textarea id="message" placeholder="Enter your message"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
                     </div>
                     <div class="btn">
                         <input type="submit" value="Send">
