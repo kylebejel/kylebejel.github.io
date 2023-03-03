@@ -19,6 +19,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 100vw;
+    padding-top: 2em;
 }
 
 .container{
@@ -192,7 +193,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 560px;
     margin: 2em auto;
 }
 
@@ -242,6 +243,16 @@ ul li a:hover{
 .cs{
     border-color: steelblue;
     color: steelblue;
+}
+
+.liq{
+    border-color: blue;
+    color: blue;
+}
+
+.api{
+    border-color: red;
+    color: red;
 }
 
 #about-me{
