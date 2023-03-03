@@ -260,7 +260,7 @@ ul li a:hover{
 }
 
 #contact{
-    height: 100vh;
+    padding: 3em 0;
 }
 
 #contact h1{
@@ -353,6 +353,77 @@ ul li a:hover{
      60% { transform: rotate( 0.0deg) }
     100% { transform: rotate( 0.0deg) }
   }
+
+.disabled{
+    cursor: not-allowed;
+    /* pointer-events: none; */
+}
+
+.disabled a{
+    background-color: lightgray;
+    pointer-events: none;
+    color: gray;
+}
+
+.contact-box{
+    height: 100%;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.left{
+    height: 100%;
+    background-color: var(--accent-color);
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+.field{
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: var(--secondary-color);
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 22px;
+    transition: .3s;
+    border: 2px solid var(--secondary-color)
+}
+
+.field:hover{
+    opacity: .7;
+}
+
+.field:focus{
+    border: 2px solid var(--accent-color);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    background-color: var(--text-color);
+    color: var(--base-color);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+.btn:hover{
+    opacity: .5;
+}
 
 .menu {
     display: none;
