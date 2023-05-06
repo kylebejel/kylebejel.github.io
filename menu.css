@@ -18,7 +18,7 @@ body{
 
 .container {
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto;
     /* background-color: rgb(161, 161, 172); opacity: 0.5; */
     background-color: #fffbf5;
@@ -27,7 +27,7 @@ body{
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 20%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-bottom: 20px;
