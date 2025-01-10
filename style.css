@@ -91,7 +91,7 @@ nav ul li a:hover{
 
 .skills ul li{
     display: inline-block;
-    padding: 0 1.4em;
+    padding: 0 .8em;
 }
 
 .skills ul li a{
@@ -225,8 +225,9 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 560px;
+    max-width: 700px;
     margin: 2em auto;
+    border-radius: 20px;
 }
 
 .project img{
@@ -254,37 +255,6 @@ nav ul li a:hover{
 
 .project p{
     padding: 1em 0;
-}
-
-.skill-badge{
-    border: 2px solid var(--text-color);
-    border-radius: 1em;
-    font-weight: 500;
-}
-
-.js{
-    border-color: blue;
-    color: blue;
-}
-
-.ht{
-    border-color: orange;
-    color: orange;
-}
-
-.cs{
-    border-color: steelblue;
-    color: steelblue;
-}
-
-.liq{
-    border-color: blue;
-    color: blue;
-}
-
-.api{
-    border-color: red;
-    color: red;
 }
 
 #about-me{
@@ -505,6 +475,22 @@ input:focus, textarea:focus{
 .active-menu-link:hover {
     color: var(--accent-color);
 }
+
+.icon {
+    font-size: 1.5rem; /* Adjust the size of the icons */
+    margin: 0px;    /* Add spacing between icons */
+}
+  .icon-html { color: #e34c26; } /* HTML5 color */
+  .icon-css { color: #1572b6; }  /* CSS3 color */
+  .icon-js { color: #f7df1e; }   /* JavaScript color */
+  .icon-py { color: #f7b21e; }   /* Python color */
+  .icon-aws { color: #f7b21e; }   /* AWS color */
+  .icon-react { color: #61dafb; }   /* Python color */
+  .icon-gql { color: #e10098; }   /* GQL color */
+  .icon-mongo { color: #57ae47; }   /* MongoDB color */
+  .icon-flask {color: #3d9561; } /* Flask color */
+  .icon-sql {color: #000080; } /* SQL color */
+
 
 @media (min-width: 768px) {
     .burger{
