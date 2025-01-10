@@ -1,7 +1,8 @@
 :root {
   --base-color: #faf9f6;
   --secondary-color: #f3f0e9;
-  --accent-color: #f99417;
+  --accent-color: #89bc91;
+  /* --accent-color: #f99417; */
   --text-color: #5a5a5a;
 }
 
@@ -405,7 +406,7 @@ textarea {
 }
 .right-side {
   width: 75%;
-  margin-left: 75px;
+  margin-left: 0px;
 }
 
 .details {
@@ -547,5 +548,9 @@ textarea:focus {
   }
   .active-menu.is-active {
     display: none;
+  }
+
+  .right-side {
+    margin-left: 75px;
   }
 }
