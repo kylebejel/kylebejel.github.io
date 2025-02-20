@@ -1,7 +1,8 @@
 :root {
   --base-color: #faf9f6;
   --secondary-color: #f3f0e9;
-  --accent-color: #89bc91;
+  /* --accent-color: #89bc91; */
+  --accent-color: #229ad7;
   /* --accent-color: #f99417; */
   --text-color: #5a5a5a;
 }
@@ -48,7 +49,7 @@ header {
 
 .accent {
   color: var(--accent-color);
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: 500;
   font-size: 1em;
 }
