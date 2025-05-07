@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
     <header>
@@ -28,6 +28,12 @@
                 <li>
                     <a href="/KyleBejel_Resume.pdf" class="resume-btn" target="_blank">Resume</a>
                 </li>
+
+                <!-- Alternative way to display certification -->
+
+                <!-- <li>
+                    <a href="https://www.credly.com/badges/8baad066-f167-461f-9493-29de7f435fb2/public_url" target="_blank" title="AWS Certified Cloud Practitioner"><img src="/img/aws_certified.png" style="max-width: 70px;" alt="AWS Certified Cloud Practitioner"></a> 
+                </li> -->
             </ul>
         </nav>
         <div class="burger">
@@ -51,18 +57,25 @@
                 <h1 id="intro" class="intro">My name is <span class="accent">Kyle Bejel</span> and I am a <span class="accent">Software Developer</span></h1>
                 <p>In a rush? Here is my <a target="_blank" class="resume" href="/KyleBejel_Resume.pdf">Resume</a>.</p>
                 <div class="socials">
-                    <a class="fa fa-github fa-2x"href="https://github.com/kylebejel" target="_blank"></a>
-                    <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/kylebejel/" target="_blank"></a>
+                    <ul>
+                        <li>
+                            <a class="fa fa-github fa-2x"href="https://github.com/kylebejel" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/kylebejel/" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.credly.com/badges/8baad066-f167-461f-9493-29de7f435fb2/public_url" target="_blank" title="AWS Certified Cloud Practitioner"><img src="/img/aws_certified.png" style="max-width: 70px;" alt="AWS Certified Cloud Practitioner"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="landing-img">
-                <!-- <img src="img/pciso.png" alt=""> -->
-                 <!-- <img src="img/Image.png" alt="landing-img"> -->
                  <img src="img/Graphic Blue.png" alt="landing-img">
             </div>
         </section>
         <section id="work">
-            <!-- <h2>Here is some of my work<span class="accent">!</span></h2> -->
             <h2>Here's some of my work:</h2>
             <div class="project">
                 <h1>Dealer Automation Technologies - Real Time Commissions</h1>
@@ -184,22 +197,6 @@
                     <a href="/projects/movie-app/index.html" title="live preview" class="live" target="_blank">Live Preview</a>
                 </div>
             </div>
-            <!-- <div class="project">
-                <h1>History Revealed Parser</h1>
-                <img src="img/ss.png" alt="THUMBNAIL HERE">
-                <div class="skills">
-                    <ul>
-                        <li class="skill-badge js">Python</li>
-                        <li class="skill-badge ht">MongoDB</li>
-                        <li class="skill-badge cs">AWS</li>
-                    </ul>
-                </div>
-                <p>Backend parser for dissecting data from scans of historical fincancial ledgers and uploading to database.</p>
-                <div class="links">
-                    <span class="disabled"><a href="" title="code" class="">&lt;/&gt;</a></span>
-                    <a href="https://shoppingstories.org/" title="live preview" class="live" target="_blank">Live Preview</a>
-                </div>
-            </div> -->
             <div class="project">
                 <h1>Coin Flipper</h1>
                 <img src="img/coin-flip-img.png" alt="THUMBNAIL HERE">
