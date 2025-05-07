@@ -68,6 +68,7 @@ header {
 
 nav ul {
   list-style: none;
+  align-items: center;
 }
 
 nav ul li {
@@ -194,6 +195,16 @@ nav ul li a:hover {
 .landing-content {
   max-width: 600px;
   min-width: 300px;
+}
+
+.socials ul {
+  padding-top: 10px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.socials li {
+  padding-right: 10px;
 }
 
 #landing img {
